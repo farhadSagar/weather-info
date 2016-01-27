@@ -3,7 +3,7 @@ A simple way to fetch user's current weather using user's ip address. It first g
 
 ## npm module request:
 ```
-sudo npm install -g require
+npm install request
 ```
 
 ### Step1: Fetching user's Current City through his IP 

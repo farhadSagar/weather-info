@@ -6,7 +6,7 @@ A simple way to fetch user's current weather using user's ip address. It first g
 sudo npm install -g require
 ```
 
-# Step1: Fetching user's the Current City through his IP 
+# Step1: Fetching user's Current City through his IP 
 ipinfo.io will let us fetch a json formated details of the current user. Json formate is saved in the body here. we can fetch the city here by calling body.city
 ```
 var request = require('request');

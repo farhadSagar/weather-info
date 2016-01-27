@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div.container.middleBox.jumbotron
+      p Welcome to #{city}
+      p Its #{temp} degrees outside. And there is #{forecast}
+      p(id='tempID' hidden) #{temp}

@@ -20,7 +20,7 @@ router.post('/weather-post', function (req, res, next) {
             city = currentWeather.name;
             temp = currentWeather.main.temp;
             forecast = currentWeather.weather[0].main;
-            res.render('weather-main', { title: 'Haha', city: city, temp: temp});
+            res.render('weather-main', { title: 'Temperature', city: city, temp: temp});
         }catch(err){
             console.log(err);
             res.redirect('/');

@@ -1,8 +1,10 @@
 extends layout
 
 block content
-  div.container.middleBox.jumbotron
-      p Welcome to #{city}
-      p Its #{temp} degrees outside.
-      p It's #{forecast}..
-      p(id='tempID' hidden) #{temp}
+    h1 Weather-Info
+    p Please Enter City Name
+    form(method='post', action='/users/weather-post')
+        .form-group
+            label City
+            input.form-control(name='cityName', type='text', placeholder='Enter City Name')
+        input.btn.btn-default(type='submit', value='Fetch')

@@ -13,22 +13,19 @@ router.get('/', function (req, res, next) {
 router.post('/weather-post', function (req, res, next) {
     console.log(req.body.cityName);
     console.log('Now redirect');
-    //callback functions to fetch weather info
 
+    //callback functions to fetch weather info
     weather(req.body.cityName, function (currentWeather) {
         try {
             city = currentWeather.name;
             temp = currentWeather.main.temp;
             forecast = currentWeather.weather[0].main;
             res.render('weather-main', { title: 'Temperature', city: city, temp: temp});
-        }catch(err){
+        } catch (err) {
             console.log(err);
             res.redirect('/');
         }
-
-
     });
-
 });
 
 

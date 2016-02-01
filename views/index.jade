@@ -1,10 +1,10 @@
 extends layout
 
 block content
-    h1 Weather-Info
-    p Please Enter City Name
-    form(method='post', action='/users/weather-post')
-        .form-group
-            label City
-            input.form-control(name='cityName', type='text', placeholder='Enter City Name')
-        input.btn.btn-default(type='submit', value='Fetch')
+    div.col-md-4.col-md-offset-4.top-continer
+        h1 Weather-Info
+        p Please Enter City Name
+        form(method='post', action='/users/weather-post')
+            .form-group
+                input.form-control(name='cityName', type='text', placeholder='Enter City Name')
+            input.btn.btn-default(type='submit', value='Check Weather')

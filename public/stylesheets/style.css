@@ -1,7 +1,6 @@
 body{
     background-image: url("../images/sky2.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
     font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
 }
 
@@ -23,3 +22,125 @@ body{
     text-shadow: 2px 2px 2px rgba(56, 96, 146, 0.73);
     text-align: center;
 }
+.foo-top {
+    margin-top: 200px;
+    background-color: #fbfdff;
+    height: 70px;
+    padding: 0px 20px 0px 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.55);
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.foo-day-wind {
+    margin-top: 10px;
+    background-color: #c8ceff;
+    margin-right: 10px;
+    height: 100px;
+    opacity: 0.8;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.55);
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.foo-country {
+    margin-top: 10px;
+    background-color: #fffdc1;
+    margin-right: 10px;
+    height: 100px;
+    opacity: 0.8;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.55);
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.foo-description {
+    margin-top: 10px;
+    background-color: #c9ffd3;
+    margin-right: 10px;
+    height: 100px;
+    opacity: 0.8;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.55);
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.foo-day-wind:hover, .foo-description:hover, .foo-country:hover, .foo-temp:hover{
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.55);
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    -khtml-transition: background-color 0.8s ease, box-shadow 0.8s;
+    -moz-transition: background-color 0.8s ease, box-shadow 0.8s;
+    -ms-transition: background-color 0.8s ease, box-shadow 0.8s;
+    -o-transition: background-color 0.8s ease, box-shadow 0.8s;
+    -webkit-transition: background-color 0.8s ease, box-shadow 0.8s;
+    transition: background-color 0.8s ease, box-shadow 0.8s, color 0.8s;
+}
+
+
+.foo-temp-mor {
+    margin-top: 10px;
+    background-color: #fffefa;
+    margin-right: 4px;
+    height: 100px;
+    opacity: 0.8;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.55);
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.foo-temp {
+    margin-top: 10px;
+    background-color: #a3a2a0;
+    margin-right: 4px;
+    height: 100px;
+    opacity: 0.8;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.55);
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.foo-temp-min{
+    background-color: #fffefa;
+}
+
+.foo-temp-mor{
+    background-color: #f0efeb;
+}
+
+.foo-temp-day{
+    background-color: #e1e0dc;
+}
+
+.foo-temp-eve{
+    background-color: #d2d1cd;
+}
+
+.foo-temp-night{
+    background-color: #c3c2be;
+}
+
+.foo-temp-max{
+    background-color: #b4b3af;
+}
+
